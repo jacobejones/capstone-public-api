@@ -1,1 +1,13 @@
-Hello World
+<%- include("partials/header.ejs") %>
+
+<body>
+    <form action="/submit-ticker" method="post"> 
+        <label for="ticker">Stock Ticker:</label><br>
+        <input type="text" id="ticker" name="ticker" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <%= stockData.price%>
+
+</body>
+</html>
